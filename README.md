@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Javascript learning - function calls, parameters, variables, loops, user input
+Javascript learning - Console, error debugging, function calls, parameters, variables, loops, user input
