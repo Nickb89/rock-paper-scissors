@@ -83,7 +83,7 @@ replayBtn.setAttribute('class', 'hideItem');
 replayBtn.textContent = "Replay";
 
 replayBtn.addEventListener('click', function(){
-    gameRounds = 0;
+    gameRounds = 1;
     playerScore = 0;
     cpuScore = 0;
     playerScoreText.textContent = "Player Score: " + playerScore;
