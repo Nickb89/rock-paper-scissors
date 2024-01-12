@@ -1,0 +1,92 @@
+body {
+    background: rgb(49,183,194);
+    background: linear-gradient(90deg, rgba(49,183,194,1) 0%, rgba(123,195,147,1) 100%);
+    background-repeat:no-repeat;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    padding:0;
+    color: white;
+    height: 100vh;
+}
+
+#GameArea {
+width: 500px;
+max-width: 600px;
+height: 250px;
+background-color: rgba(255,255,255, .3);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+margin:20px;
+
+
+}
+
+h1 {
+    margin:0;
+    display: flex;
+    align-self: flex-start;
+    padding:5px;
+    font-size: 12px;
+    color:#ffffff;
+}
+
+.textArea {
+    font-size: 20px;
+    display: flex;
+}
+
+.scoreDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: white;
+
+}
+
+.scoreDiv p{
+    color: darkslategray;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    background:none;
+    border:none;
+    display: flex;
+}
+
+.replayBtn {
+    display:flex;
+    background-color: rgba(123,195,147,1);
+    color: white;
+    border: 2px rgb(195, 255, 215);
+    width: auto;
+    padding:8px;
+    height:fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 40px;
+  
+
+}
+
+.hideItem {
+    display: none;
+}
+
+#buttonsDiv{
+    display: flex;
+    width:70%;
+    height:110px;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background:none;
+    padding: 10px;
+    border-radius: 12px;
+}
