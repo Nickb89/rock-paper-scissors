@@ -98,11 +98,11 @@ function getComputerChoice()  {
 
     btnRock.addEventListener('click', function() {
         
-        if(gameRounds <=4 ){
+        if(gameRounds <=5 ){
         playerChoice = "rock";
         playRound(playerChoice, getComputerChoice());
         currentRoundText.textContent = "Round: " + gameRounds;
-        if (gameRounds == 5){
+        if (gameRounds > 5){
             GameOver();
         };
         }  
@@ -114,7 +114,7 @@ function getComputerChoice()  {
             playerChoice = "scissors";
             playRound(playerChoice, getComputerChoice());
             currentRoundText.textContent = "Round: " + gameRounds;
-            if (gameRounds == 5){
+            if (gameRounds > 5){
                 GameOver();
             };
             }  
@@ -126,7 +126,7 @@ function getComputerChoice()  {
             playerChoice = "paper";
             playRound(playerChoice, getComputerChoice());
             currentRoundText.textContent = "Round: " + gameRounds;
-            if (gameRounds == 5){
+            if (gameRounds > 5){
                 GameOver();
             };
             }  
