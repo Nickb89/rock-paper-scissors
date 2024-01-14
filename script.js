@@ -1,27 +1,13 @@
 let playerScore = 0;
 let cpuScore = 0;
-let gameRounds = 0;
+let gameRounds = 1;
 let playerChoice = "";
-
-
-
-
-
-//TO DO
-
-//on mouse enter javascript event listner to enlarge image
-//replay button resets game
-//not happy with look
-
-
 
 
 //Get element references and create button div.
 const mainDiv = document.querySelector('#GameArea');
 const buttonsDiv = document.createElement('div');
 buttonsDiv.setAttribute('id', 'buttonsDiv');
-
-
 
 
 //add 3 buttons for player choice
@@ -124,7 +110,7 @@ function getComputerChoice()  {
         
 
     btnScissors.addEventListener('click', function() {
-        if(gameRounds <=4 ){
+        if(gameRounds <=5 ){
             playerChoice = "scissors";
             playRound(playerChoice, getComputerChoice());
             currentRoundText.textContent = "Round: " + gameRounds;
@@ -136,7 +122,7 @@ function getComputerChoice()  {
         
 
     btnPaper.addEventListener('click', function() {
-        if(gameRounds <=4 ){
+        if(gameRounds <=5 ){
             playerChoice = "paper";
             playRound(playerChoice, getComputerChoice());
             currentRoundText.textContent = "Round: " + gameRounds;
