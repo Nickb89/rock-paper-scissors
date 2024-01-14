@@ -74,7 +74,7 @@ replayBtn.addEventListener('click', function(){
     cpuScore = 0;
     playerScoreText.textContent = "Player Score: " + playerScore;
     CPUScoreText.textContent = "Computer Score: " + cpuScore;
-    currentRoundText. textContent = "Round: " + gameRounds;
+    currentRoundText.textContent = "Round: " + gameRounds;
     textDiv.textContent = "Rock Paper or Scissors?";
     btnRock.classList.toggle('hideItem');
     btnPaper.classList.toggle('hideItem');
@@ -103,6 +103,7 @@ function getComputerChoice()  {
         playRound(playerChoice, getComputerChoice());
         currentRoundText.textContent = "Round: " + gameRounds;
         if (gameRounds > 5){
+            currentRoundText.textContent = "";
             GameOver();
         };
         }  
@@ -115,6 +116,7 @@ function getComputerChoice()  {
             playRound(playerChoice, getComputerChoice());
             currentRoundText.textContent = "Round: " + gameRounds;
             if (gameRounds > 5){
+                currentRoundText.textContent = "";
                 GameOver();
             };
             }  
@@ -127,6 +129,7 @@ function getComputerChoice()  {
             playRound(playerChoice, getComputerChoice());
             currentRoundText.textContent = "Round: " + gameRounds;
             if (gameRounds > 5){
+                currentRoundText.textContent = "";
                 GameOver();
             };
             }  
